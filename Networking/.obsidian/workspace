@@ -1,0 +1,133 @@
+{
+  "main": {
+    "id": "56c44b035c7547eb",
+    "type": "split",
+    "children": [
+      {
+        "id": "9751fee32f5998fb",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Networing MOC.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "9e08b4015ae5ebdc",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "NET Computer Networks and the Internet.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d801a25ece6b4ecf",
+    "type": "split",
+    "children": [
+      {
+        "id": "5ac52e2da1ece33f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0134a02f864a4df4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "7c31f031e54ba2d7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "af66c7792bf1fbb9",
+    "type": "split",
+    "children": [
+      {
+        "id": "ed219c1c110e755d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aba052f780dcfe9c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Networing MOC.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "51bd6040e75823b1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "1c112a3529cd52b7",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "9751fee32f5998fb",
+  "lastOpenFiles": [
+    "NET Computer Networks and the Internet.md",
+    "Networing MOC.md",
+    "NET Delay, Loss, and Throughput In Packet Switched Networks.md",
+    "NET Network Core.md",
+    "001 Computer Networks and the Internet^Fiber To Home.md",
+    "Flashcards.md",
+    "Terms.md"
+  ]
+}

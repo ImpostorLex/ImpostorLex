@@ -1,0 +1,126 @@
+{
+  "main": {
+    "id": "67d86a1b57f8cf3b",
+    "type": "split",
+    "children": [
+      {
+        "id": "20c8c661102dd774",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Nmap.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c0cacadda4becf70",
+    "type": "split",
+    "children": [
+      {
+        "id": "a052c6e917193ca9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8a31bda7662e9446",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "96eec9d42a8fbc0b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "432aeaf3fd71d814",
+    "type": "split",
+    "children": [
+      {
+        "id": "e176b7c3b1cf7c40",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8c2eb6acc10cbe40",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Nmap.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f1c8a9638ea2e1cc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Nmap.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cd41f43d61c79432",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "20c8c661102dd774",
+  "lastOpenFiles": [
+    "TryHackMe/Level 1 - Intro.md",
+    "TryHackMe/Level 2 - Tooling.md",
+    "Linux Fundamentals.md",
+    "Nmap.md",
+    "OvertheWire/Bandit 1-20.md",
+    "Untitled.md",
+    "TryHackMe/Intro to Offensive Security/Intro to Offensive Security.md",
+    "SQL Injection.md"
+  ]
+}

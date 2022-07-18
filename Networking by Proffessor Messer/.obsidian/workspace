@@ -1,0 +1,112 @@
+{
+  "main": {
+    "id": "04526b105f19fabd",
+    "type": "split",
+    "children": [
+      {
+        "id": "47f2e50f58d00a9f",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "OSI MODEL.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a285f78a61df11d9",
+    "type": "split",
+    "children": [
+      {
+        "id": "7e6404b65e0af7ca",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "faef05b87554f9b4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "4f0b90d6ede0e601",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#network_interface_card",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7bfe7caf1a591cc9",
+    "type": "split",
+    "children": [
+      {
+        "id": "4ff215a7c8034f90",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2fdc4d2422e773c3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "OSI MODEL.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d3778dac79c65a2d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "47f2e50f58d00a9f",
+  "lastOpenFiles": [
+    "OSI MODEL.md",
+    "Data Communication.md",
+    "Terms.md",
+    "[Terms^specfic].md",
+    "Terms^specfic.md",
+    "[[Terms]].md"
+  ]
+}

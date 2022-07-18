@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "e4e165ee1dfe5535",
+    "type": "split",
+    "children": [
+      {
+        "id": "5f1ab4a755396e34",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ba6907090f414409",
+    "type": "split",
+    "children": [
+      {
+        "id": "f338b97e11b871bf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "88fb02b19fa68ebf",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "4fadb79ed119e271",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "69558513cd30fcf8",
+    "type": "split",
+    "children": [
+      {
+        "id": "b455614584290eec",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5b419f77442f26cc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f21bd89817177228",
+            "type": "leaf",
+            "state": {
+              "type": "BC-matrix",
+              "state": {}
+            }
+          },
+          {
+            "id": "4cd6d6c63f7bf99f",
+            "type": "leaf",
+            "state": {
+              "type": "BC-tree",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "5f1ab4a755396e34",
+  "lastOpenFiles": []
+}

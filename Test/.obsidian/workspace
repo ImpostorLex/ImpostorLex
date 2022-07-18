@@ -1,0 +1,122 @@
+{
+  "main": {
+    "id": "53c3c707f2b56686",
+    "type": "split",
+    "children": [
+      {
+        "id": "5f88534a190f6234",
+        "type": "leaf",
+        "state": {
+          "type": "image",
+          "state": {
+            "file": "Pasted image 20220626115415.png"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "66f0274e2a4a487a",
+    "type": "split",
+    "children": [
+      {
+        "id": "540013a7d1f9d923",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "47be3757e692232f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "7969b11354e7e89e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4e7576b723c0f3fd",
+    "type": "split",
+    "children": [
+      {
+        "id": "41f2c2fc53993d0c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9e4ef095d9367bb6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Pasted image 20220626115415.png",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "edcfe23317cd8d52",
+            "type": "leaf",
+            "state": {
+              "type": "BC-matrix",
+              "state": {}
+            }
+          },
+          {
+            "id": "15cb58a3dddaf48c",
+            "type": "leaf",
+            "state": {
+              "type": "BC-tree",
+              "state": {}
+            }
+          },
+          {
+            "id": "5b4258a0a7273890",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "5f88534a190f6234",
+  "lastOpenFiles": [
+    "Pasted image 20220626115415.png",
+    "Obsidian 2.md",
+    "Obsidian Test.md",
+    "Go To Obsidian.md",
+    "same of Obsidian 2 1.md",
+    "same of Obsidian 2.md",
+    "up of Obsidian Test.md"
+  ]
+}
