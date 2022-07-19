@@ -11,9 +11,13 @@ img[alt*="center"] {
     margin-left: auto;
     margin-right: auto;
 }
-span.cm-highlight {
-color:black;
-background-color:white;
+
+
+.markdown-source-view.mod-cm6 .cm-underline {
+    text-decoration: none;
 }
+
+
+
 
 

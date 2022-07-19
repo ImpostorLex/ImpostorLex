@@ -4,12 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "20c8c661102dd774",
+        "id": "bd1f74143afa9e47",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Nmap.md",
+            "file": "ETH Metasploit.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "9e15f4a395d29043",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "ETH Terms.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -41,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#scripts_vs_code",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -54,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "432aeaf3fd71d814",
@@ -71,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Nmap.md",
+                "file": "ETH Terms.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Nmap.md",
+                "file": "ETH Terms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -112,15 +124,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "20c8c661102dd774",
+  "active": "9e15f4a395d29043",
   "lastOpenFiles": [
-    "TryHackMe/Level 1 - Intro.md",
-    "TryHackMe/Level 2 - Tooling.md",
+    "ETH Metasploit.md",
+    "ETH Nmap.md",
+    "ETH 001 Practical Metasploit.md",
+    "ETH Terms.md",
     "Linux Fundamentals.md",
-    "Nmap.md",
     "OvertheWire/Bandit 1-20.md",
-    "Untitled.md",
-    "TryHackMe/Intro to Offensive Security/Intro to Offensive Security.md",
-    "SQL Injection.md"
+    "TryHackMe/001 Nmap Practical.md",
+    "TryHackMe MOC.md",
+    "TryHackMe/Level 2 - Tooling.md",
+    "TryHackMe/Intro to Offensive Security/Intro to Offensive Security.md"
   ]
 }

@@ -8,26 +8,32 @@ Uses ssh to connect to the command line of a remote machine.
 ## Bandit0
 Password in readme.txt file: **boJ9jbbUNNfktd78OOpsqOltutMc3MY1**
 
+---
 ## Bandit1
 Opened a filename ''-'' using **.cat /-** to open a dashed file **CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9**
 
+---
 ## Bandit2
 Uses quotes  to open filename with spaces. `cat 'spaces in this file name'` 
 **UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK**
 
+---
 ## Bandit3
 Uses `ls -la` to reveal a long list format and all hidden files.
 
 Found a file *.hidden* uses a text editor `nano .hidden` to reveal password: **pIwrPrtPN36QITSp3EQaw936yaFoFgAB**
 
+---
 ## Bandit4
 cat **./-file07** : **koReBOKuIDDepwhWk7jZC0RTdopnAYKh**
 
+---
 ## Bandit5
 Is human readable, 1033 bytes in size, not executable
 
 found on dir **maybehere07 : ./file2** : **DXjZPULLxYr17uwoI01bNLQbtFemEgo7**
 
+---
 ## Bandit6
 We don't know the directory only the parameters.
 
@@ -41,6 +47,7 @@ On root directory use command `find ./ -user bandit7 -group bandit6 -size 33c`
 
 `cat lib/dpkg/info/bandit7.password`  : **HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs**
 
+---
 ## Bandit7
 found a file with thousands of words.
 
@@ -48,6 +55,7 @@ password is next to millionth.
 
 use **grep “millionth” data.txt** : **cvX2JJa4CFALtqS87jk27qwqGhBM9plV**
 
+---
 ## Bandit8
 data.txt with thousand of duplicated lines with one non-duplicated line
 
@@ -57,6 +65,7 @@ data.txt with thousand of duplicated lines with one non-duplicated line
 
 *uniq* cannot detect duplicate lines so that is why we need to sort it first then use *uniq -u* to only print unique lines.
 
+---
 ## Bandit9
 The password for the next level is stored in the file **data.txt** in one of the few human-readable strings, preceded by several ‘=’ characters.
 
@@ -68,6 +77,7 @@ We can use **grep -a** for patterns and **strings** for contents of non-text fil
 
 `strings data.txt | grep -E "=+"`  : **truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk**
 
+---
 ## Bandit10
 data.txt file is encoded in Base64 which is an encoder
 
@@ -75,6 +85,7 @@ data.txt file is encoded in Base64 which is an encoder
 
 *-d* decodes
 
+---
 ## Bandit11
 
 The password for the next level is stored in the file **data.txt**,where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
@@ -89,6 +100,7 @@ then the ‘A-Za-z’ found on the data.txt will be translated according to the 
 
 `cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'` : **5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu**
 
+---
 ## Bandit12
 The password for the next level is stored in the file **data.txt**,which is a hexdump of a file that has been repeatedly compressed.For this level it may be useful to create a directory under /tmp inwhich you can work using mkdir. For example: mkdir /tmp/myname123.Then copy the datafile using cp, and rename it using mv (read themanpages!)
 
@@ -126,4 +138,27 @@ gzip -d binary.gz results into binary ASCII plaintext after using `file binary`
 
 Finally the password is: **8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL**
 
+---
+
+## Bandit13
+```ad-question
+The password for the next level is stored in **/etc/bandit_pass/bandit14 and can only be read by user bandit14**. For this level, you don’t get the next password, but you get a private SSH key that can be used to log into the next level. **Note:** **localhost** is a hostname that refers to the machine you are working on.
+```
+
+Public key is used to lock messages while the private key is used to unlock the message. Typically the private key is stored in the computer you log in from and the public key is stored in the computer you want to log in to.
+
+More about this at https://help.ubuntu.com/community/SSH/OpenSSH/Keys.
+
+`ssh -i sshkey.private bandit14@localhost`
+
+The `-i` flag is to identify a file to be used.
+
+**4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e**
+
+---
+
+## Bandit 14
+```ad-question
+The password for the next level can be retrieved by submitting the password of the current level to **port 30000 on localhost**.
+```
 

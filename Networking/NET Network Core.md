@@ -52,7 +52,7 @@ Host A and B send packets through a 100 Mbps Ethernet link to the router and the
 	
 	- IP address has a hierarchical structure meaning that the router examines a portion of packet's destination address then forwards to the packet to the next router or what they call **Forwarding table**that maps destination address.
 	
-	- When a packet arrives the router examines the address and uses the forwarding table to find the right outbound (Outbound = traveling away / in this case it is more like finding the right path) link, then router redirects the packet to this outbound link.
+	- When a packet arrives the router examines the address and uses the forwarding table to find the right #outbound_link (Outbound = traveling away / in this case it is more like finding the right path to dest.) then router redirects the packet to this outbound link.
 	
 	- Internet has a very special #Routing_Protocols that are used to automatically set the forwarding tables to determine the shortest path to configure forwarding tables in the router.
 	

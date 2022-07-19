@@ -54,7 +54,7 @@ Some pieces of the internet
 ## Internet
 - Hosts, packet switches and other pieces of the internet run #Protocols that controls the sending and receiving of information within the internet.
 
-- Internet apps includes mobile and tablet applications such as social media, music, television, and movie streaming these are what you call *Distributed applications* they involve multiple end systems that exchange data with each other. Apps run on end systems not on #packet_switches
+- Internet apps includes mobile and tablet applications such as social media, music, television, and movie streaming these are what you call #Distributed_applications they involve multiple end systems that exchange data with each other. Apps run on end systems not on #packet_switches
 ---
 ## #Socket_Interface
 - Is a set of rules that a program must follow so the Internet can deliver the data

@@ -11,5 +11,5 @@ A map of content of my networking notes
 
 
 ---
-Network [[Terms]]
-Network [[Flashcards]]
+Network [[NET Terms]]
+Network [[NET Flashcards]]

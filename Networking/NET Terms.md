@@ -57,3 +57,7 @@ Sending data across the Internet with maximum of 40 Mbps, cannot exceed 40 Mbps
 #Internet_Speed
 
 How much data can be downloaded or uploaded on your computer
+
+#throughput ^70e203
+
+The amount of data per second that can be transferred.

@@ -4,25 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "9751fee32f5998fb",
+        "id": "1b29959acfb3860f",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Networing MOC.md",
-            "mode": "source",
-            "backlinks": true,
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         }
       },
       {
-        "id": "9e08b4015ae5ebdc",
+        "id": "471e45abc2f475aa",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "NET Computer Networks and the Internet.md",
+            "file": "NET Terms.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -54,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#throughput",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -67,7 +62,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "af66c7792bf1fbb9",
@@ -83,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Networing MOC.md",
+                "file": "NET Terms.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,14 +116,14 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "9751fee32f5998fb",
+  "active": "1b29959acfb3860f",
   "lastOpenFiles": [
-    "NET Computer Networks and the Internet.md",
-    "Networing MOC.md",
+    "NET Flashcards.md",
     "NET Delay, Loss, and Throughput In Packet Switched Networks.md",
+    "NET Terms.md",
     "NET Network Core.md",
-    "001 Computer Networks and the Internet^Fiber To Home.md",
-    "Flashcards.md",
-    "Terms.md"
+    "Networing MOC.md",
+    "NET Computer Networks and the Internet.md",
+    "001 Computer Networks and the Internet^Fiber To Home.md"
   ]
 }
