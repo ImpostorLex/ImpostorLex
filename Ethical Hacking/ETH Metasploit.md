@@ -143,5 +143,4 @@ We can `background` a session using `background` command and open up a new sessi
 
 ---
 
-More tools [[TryHackMe MOC#^17ad72|here]].
-Working with [[ETH 001 Practical Metasploit|Modules]]
+More tools [[Ethical Hacking MOC#^17ad72|here]].

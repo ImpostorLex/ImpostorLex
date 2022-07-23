@@ -1,1 +1,10 @@
-{}
+{
+  "global-search:open": [
+    {
+      "modifiers": [
+        "Shift"
+      ],
+      "key": "/"
+    }
+  ]
+}

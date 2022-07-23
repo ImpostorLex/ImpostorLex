@@ -8,14 +8,14 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "Level 1",
+      "query": "TryHackMe",
       "color": {
         "a": 1,
         "rgb": 14701138
       }
     },
     {
-      "query": "Level 2",
+      "query": "Bandit",
       "color": {
         "a": 1,
         "rgb": 14725458
@@ -33,5 +33,5 @@
   "linkStrength": 1,
   "linkDistance": 250,
   "scale": 1,
-  "close": false
+  "close": true
 }

@@ -58,6 +58,8 @@ Sending data across the Internet with maximum of 40 Mbps, cannot exceed 40 Mbps
 
 How much data can be downloaded or uploaded on your computer
 
-#throughput ^70e203
+#throughput:- The amount of data per second that can be transferred. ^4e7949
 
-The amount of data per second that can be transferred.
+#caravan
+
+A group of things travels together in a line.

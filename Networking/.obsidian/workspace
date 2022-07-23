@@ -4,15 +4,46 @@
     "type": "split",
     "children": [
       {
-        "id": "1b29959acfb3860f",
+        "id": "471e45abc2f475aa",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "NET Queuing Delay and Packet Loss.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          }
         }
       },
       {
-        "id": "471e45abc2f475aa",
+        "id": "b7779b38b1afdad2",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "NET Network Core.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "284cab473b7b5cd8",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "NET Network Core.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "dea51437b40727e5",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -62,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "af66c7792bf1fbb9",
@@ -79,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NET Terms.md",
+                "file": "NET Queuing Delay and Packet Loss.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,14 +146,16 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "1b29959acfb3860f",
+  "active": "0134a02f864a4df4",
   "lastOpenFiles": [
-    "NET Flashcards.md",
-    "NET Delay, Loss, and Throughput In Packet Switched Networks.md",
-    "NET Terms.md",
     "NET Network Core.md",
+    "NET Queuing Delay and Packet Loss.md",
+    "NET Terms.md",
     "Networing MOC.md",
+    "NET Delay, Loss, and Throughput In Packet Switched Networks.md",
     "NET Computer Networks and the Internet.md",
+    "NET Flashcards.md",
+    "DSL.md",
     "001 Computer Networks and the Internet^Fiber To Home.md"
   ]
 }

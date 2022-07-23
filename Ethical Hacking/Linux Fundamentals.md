@@ -69,6 +69,8 @@ Another example using an URL instead of an IP address but needs a port number sp
 
 - Once the system  boots up and inialises, the **systemd** (provides a way of managing user's process and it is located between the OS and the user.) is the first process that will run. Any software or program will run under systemd but it will run as its own process meaning new specfic PID for that process.
 
+---
+
 ### Killing A Process
 - We can kill a process using ==kill PID#== or we can let it do something before killing it.
 	
@@ -77,6 +79,8 @@ Another example using an URL instead of an IP address but needs a port number sp
 	• ==SIGKILL== - Kill the process - doesn't do any cleanup after the fact.
 	
 	• ==SIGSTOP== - Stop/suspend a process.
+
+---
 
 ### Systemctl 
 - We can start, stop, enable, and disable processes when it boots up using ==systemctl==
@@ -100,4 +104,4 @@ title: Systemctl
 
 
 ---
-Advanced Linux CTF [[Bandit 1-20|OverTheWire's CTF]]
+Beginner to Advanced Linux CTF [[Bandit 1-20|OverTheWire's CTF]]

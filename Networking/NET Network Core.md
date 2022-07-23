@@ -11,16 +11,22 @@
 ^7272e3
 - End systems exchange **messages** with each other and these messages can be whatever the application designer wants, it can also perform control actions.
 
-- These messages from the source are broken down to chunks also known as packets
+- These messages from the source are broken down to chunks also known as packets.
+
 - Packets travels through #Communication_links  and #Packet_switches.
 
 - *L* represents Packet length and *R* represents link bandwidth assuming #Propagation_delay  is zero, L = 7.5Mbits and R = 1.5Mbps = it will take 5 Seconds to reach the destination.
+
 ---
 ### Store-and-Forward Transmission
+
+^b46806
+
 - (Most packet switches) Entire packet must arrived first before transmission of first bit packet.
 
 - ![[Pasted image 20220709093318.png]]
-- Packet 1 arrives at the Router but Router will not transmit, it is waiting for the rest of the packet, Packet 1's bits are stored or buffered
+- Packet 1 arrives at the Router but Router will not transmit, it is waiting for the rest of the packet, Packet 1's bits are stored or buffered.
+
 - With #Propagation_delay it depends the speed of the medium and how long the link is
 
 - 1 Kilobyte = 1000 Byte
@@ -33,15 +39,21 @@
 - With a 10Mbps transmission link. 8000 bit / 10,000,000 = .8 miliseconds (Source to Router) + Router to Destination (Assuming R rate is the same for Router to Dest.)  .8 + .8 (Propagation delay = to spread) = .16 miliseconds.
 
 - If cut-through method is used it would only take .8 milseconds to S. > R > Dest. since it will not wait for the other packets to arrive.
+
 ---
-### Queuing Delays and Packet Loss
+
+^d0a276
+### Queuing Delays and Packet Loss 
 - Packet switch has an #output_buffer for every attached link, it stores packets that the router is about to send to that link.
+
 - The output buffer is place where packets waits if the link is busy with transmission of another packet to the same link.
+
 - Arriving or queueing packets are loss if buffer space is full
 
 ```ad-example
 title: Packet Queue
 Host A and B send packets through a 100 Mbps Ethernet link to the router and the router directs packet to the 15 Mbps link if the arrival of packets keeps arriving on the router it will cause an congestion (crowded) in the links **output buffer**. Packet is waited until it is its turn to be transmitted.
+
 ![[Pasted image 20220711170555.png]]
 ```
 ---
@@ -75,7 +87,7 @@ Restaurant A only accepts reservation, R-B is first come, first serve basis, At 
 ```
 
 ![[Pasted image 20220712100235.png|center]]
-**Figure 1.13**
+														**Figure 1.13**
 
 - Figure 1.13 is interconnected by four links, has four-circuits so it can support four simultaneous connections.
 

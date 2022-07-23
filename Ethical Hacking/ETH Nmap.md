@@ -57,6 +57,8 @@ When the one who iniates the connection receives a SYN/ACK flag set, the target 
 
 If nmap is run with sudo the default will be SYN scans without sudo the TCP Connect scan is used.
 
+---
+
 ## UDP Scans
 The command `namp -sU` is a udp connection that rely on sending packets to the receiver and hoping that they are received without the SYN and ACK flags. UDP is stateless.
 
@@ -215,6 +217,6 @@ ICMP
 
 ---
 
-More tools at [[TryHackMe MOC#^17ad72|Level 2 - Tooling]]
-Nmap [[001 Nmap Practical| 001 Practical]]
+More tools at [[Ethical Hacking MOC#^17ad72|Level 2 - Tooling]].
+
  

@@ -14,32 +14,42 @@ max_depth: 6
 Some pieces of the internet
 
 ## #Hosts
-- Is connected together by a network of #Communication_links and #Packet_switches
+- Is connected together by a network of #Communication_links and #Packet_switches.
+
 - Access the internet through their #ISPs (Internet Service Providers)
 	- Residential ISPs (local cable or telephone companies)
 	- Corporate ISPs
 	- University ISPs
 	- ISPs that provided WiFi access in airports, coffee shops, etc and cellular data ISPs that provided mobile access to the internet
 ---
+
 ## #Communication_Links
 - Made up of different types of physical media
 	- Coaxial cable
 	- Copper wire
 	- Optical fiber
 	- Radio Spectrum
-- Different links have different data transmission rates, transmission rate is measured in bits/seconds
-- When an end system sends a data, it segments the data and adds #header bytes to each segments thus resulting into packets then send to the destination specified in the header and segments are reassembled back to the original form
+- Different links have different data transmission rates, transmission rate is measured in bits/seconds.
+
+- When an end system sends a data, it segments the data and adds #header bytes to each segments thus resulting into packets then send to the destination specified in the header and segments are reassembled back to the original form.
+
 ---
+
 ## #Packet_switches 
-- More info on Packet Switching at [[NET Network Core#^7272e3|Network Core]]
-- Many types of packet switches but two most common are *routers* and *link-layer switches* both forwards packets into their destination
+- More info on Packet Switching at [[NET Network Core#^7272e3|Network Core]].
+
+- Many types of packet switches but two most common are *routers* and *link-layer switches* both forwards packets into their destination.
+
 - Packets that travels in order of communication links and packet switches from sender to receiver is known as route or path.
+
 - An example of this in a real world scenario is a commercial trucks, factory wants to move large amount of cargo, cargo is segmented and loaded to fleet of trucks, trucks travels to network of highways, trucks reached destination, cargo unloaded and grouped with the other cargos
 	- Sender and Receiver warehouse = end systems
 	- Trucks = packets
 	- Highways or Road = communication links
 	- Intersections = packet switches
+	
 ---
+
 ## #ISPs
 ^f4e7d1
 - Is a network of packet switches and communication links.
@@ -63,6 +73,7 @@ Some pieces of the internet
 	- Alice wants to send a letter (the data) to Bob using a postal service and the postal service has its *set of rules* when it comes to sending a letter, It requires the letter to be inside of the envelope, Alice and Bob's full name, address, and zip code and drop it into the postal service mailbox.
 	- A postal service has more than one services other than sending and receiving letters, it provides express delivery, reception confirmation, and more. Similarly the Internet provides multiple services to its applications.
 ---
+
 ## #Protocols
 - Greetings between two (or more) communicating entities running on the same protocols
 	- Sometimes different response to an 'Hi' is 'Don't bother me!' therefore we cannot proceed to ask a question or do something we intended to do with that person (or computer). 
@@ -109,21 +120,26 @@ Some pieces of the internet
 		-  if several users are simultaneously downloading a file on the downstream channel the actual rate will be slower than the considered whole downstream rate
 		-  ![[Pasted image 20220703154158.png]]
 		---
+  
   ### Fiber to the Home 
 	- Provides an optical fiber path from CO to the home	
 	- Non-metallic they are unaffected of electromagnetic interfererance (i.e weather)
 	
 	- *Direct Fibers* one fiber leaves CO and each fiber are shared by many homes until it gets relatively close to the homes then the fiber splits into customer-specific fibers
+	
 		- Two optical-distribution network architectures that perform the splitting
 			- Active optical networks (AONs) is basically switched Ethernet
+			
 			- Passive optical networks (PONs) each home has a optical network terminator (ONT) which is connected by dedicated optical fiber to a splitter
 				- Splitter combines number of homes usally less than 100 onto a single, shared optical fiber which connects to an optical line terminator (OLT) into the CO.
+				
 				- OLT provides convesation between optical and electrical signals connects the internet via telco router and at home users connect to a home router usually wireless to the Optical Network Terminator and access the Internet via the home router.
 				- All packets sent from OLT to the splitter are replicated, similar to #cable_head_end.
 				- ![[Pasted image 20220705104554.png]]
     ---
    - ### Access in the Enterprise and Home
-	  - LAN used to connect an end system to the #edge_router, Ethernet is generally used in corporate, university, and home networks
+	  - LAN used to connect an end system to the #edge_router, Ethernet is generally used in corporate, university, and home networks.
+	  
 		  - Ethernet used a twisted-pair copper wire to connect to a Ethernet switch or network of interconnected switches which then connected into a larger Internet, (Users have 100Mbps to 10Gbps and Servers have 1Gbps to 10Gbps)
 	  - ![[Pasted image 20220705105513.png]]
 	  - Users are accessing the Internet Wirelessly via mobile devices and other 'things' wireless users transmit/receives packets from/to an #access_point that is connected to an enterprise's network (most of the time using wired Ethernet) which connects to the wired Internet (users should be 10-20 meters of the access point)
@@ -131,12 +147,20 @@ Some pieces of the internet
 	  - ![[Pasted image 20220705112415.png]]
    - ### Wide-Area Wireless Access: 3G and LTE 4G and 5G
 		- Iphones and android devices employ the same wireless infrrastructure used for cellular telephony to send/receive packets through a base station that is operated by cellular network provider users need to be 10-20 kilometers of the base station (4G and 5G)
-	---
+	
+---
+
 ## Physical Media
-- Refers to the physical materials that store and transmit information
+
+^b5779b
+
+- Refers to the physical materials that store and transmit information.
+
 - Physical medium is a series of links and routers ( #transmitter-receiver pair) where the packet spreads until it arrives on destination 
+
 - Doesn't have to be the same type of transmitter-receiver pair
-- Two types of physical media: 
+
+- Two types of **physical media**: 
 	- *Guided media*: guides the waves (from transmitter antenna to receiver antenna) with a strong physical medium
 	
 	- *Unguided media*: waves spreads in the atmosphere and in the outer space such as in wireless LAN or digital satellite channel

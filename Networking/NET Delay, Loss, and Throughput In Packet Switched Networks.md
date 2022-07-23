@@ -4,7 +4,7 @@
 
 The Internet can be viewed as an infrastructure that provides services to #Distributed_applications running on end systems.
 
-Computer network limits the [[NET Terms#^70e203|throughput]] between end systems
+Computer network limits the [[NET Terms#^4e7949|throughput]] between end systems.
 
 ## 1.4.1 Delay in Packet-Switched Networks
 Packet starts from the source and it passes through a series of routers and the journey end when it reaches the destination.
@@ -38,6 +38,16 @@ Length of queuing delay depends on packets that arrive earlier than our packet t
 
 Delay are usually in microseconds to miliseconds.
 
+```ad-note
+title: Packet Queueing Delay
+**a**:- Average packet arrival rate
+**L**:- Packet Length (bits)
+**R**:- Bandwidth (Bit transmission rate)
+$$L\times a/R$$
+
+![[Pasted image 20220721124445.png]]
+```
+
 ---
 
 ### Transmission Delay
@@ -57,6 +67,81 @@ $100\times10^6$ = 100,000,000 bits since calculation is always in bits (100 Mbps
 
 So it wall take 0.12ms to transmit or push the packets to Router B
 ```
+
+---
+
+### Propagation Delay
+
+Is the time required to continue from the beginning of the link to router B.
+
+Distance between the two routers.
+
+Propagation depends on the [[NET Computer Networks and the Internet#^b5779b|Physical Medium]] of the link and have a range of
+
+Length of the link.
+
+$$2\times10^8 meter/sec - 3\times10^8 meters/sec$$
+
+Almost equal to the speed of light.
+
+It is the distance between two routers divided by the propagation speed.
+
+*D* represents the distance between the routers A and B and *S* is the propagation speed of the link. 
+
+$$ d/s $$
+
+---
+
+### Transmission and Propagation Delay
+
+Transmission delay is the time required to push out the packets.
+
+Propagation delay is the time it takes for a bit to spread/cross from one router to another (until it gets to its destination).
+
+
+**Figure 1.17**
+
+```ad-example
+title: Transmission and Propagation
+
+A highway(The **link**) that have a toolbooths(The **Routers**) for every 100 kilometers and a car that travel(**propagate**) on **highway** with a speed of 100 km/hour (everytime a car leaves a toolbooth it have the speed of 100 km/hour instantly) and the next 10 cars(The **bits**) follows each other in a fixed order and the #caravan as packet and tollbooth services(**transmits**) has a rate of 12 seconds per car.
+
+![[Pasted image 20220720104100.png]]
+
+Say that if one car of the caravan arrives first at the toolbooth, it waits for the entire 9 cars lined up behind it in other words entire caravan must be stored at the toolbooth first before it can get forwarded([[NET Network Core#^b46806|Store and Forward]]).
+
+So for a toolbooth to push the entire caravan into the **highway** would take 
+for a toolbooth to process 5 cars (12 seconds each) = 1 minute, for a toolbooth to process 10 cars would take 2 mins that is the **transmission delay**.
+
+And the time for a car to travel from exit toolbooth to the next is 1 hour because the link speed (or the highway) have a speed of 100 km/hour and the next toolbooth location is in 100 km so it would take an hour to get one car from one exit toolbooth to the next is the **propagation delay**. In total of 62 minutes.
+```
+
+```ad-seealso
+title: Much Faster, Transmission and Propagation
+Car travels(**propagate**) at the rate of 1,000 km/hour and tollbooth services per car is minute, Total time to serve all ten cars in a tollbooth will be **10 minutes** and travelling between two tollbooths is **6 minutes**, since 100 % 1000 = 0.1 x 60(Mins in seconds) = 6 mins.
+```
+
+```ad-example
+title: Transmission vs Propagation
+**Transmission Delay:**
+In a restaurant before we get the food the chef/cook have to prepare it and cook it first because you can't serve raw food to people.
+
+**Propagation Delay:**
+When the food is ready to serve how much time will the food get to its customer, that depends on the distance of the customer and how fast the waiter is (think of waiters as the links).
+```
+
+---
+
+#### Total Delay
+
+$$ Dnodal = Dproc + Dqueue + dtrans + dprop $$
+
+Contribution of each delay sometimes is only small amount barely noticed.
+
+For example *Dproc* can be just microseconds if two routers are only in the same university, it is often negligible but it influences the router's maximum #throughput .
+
+Next is *Dtrans* can be small amount to noticeable, if the transmission rate is 10 Mbps it is not noticeable, however if a packet is sent over the Internet witth slow modem links it can be noticeable.
+
 
 
 ---

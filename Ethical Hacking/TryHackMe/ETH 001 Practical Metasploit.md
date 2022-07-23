@@ -26,5 +26,5 @@ meterpreter [cheat sheet](https://pentestmag.com/metasploit-cheat-sheet/) here.
 
 ---
 
-More tools [[TryHackMe MOC#^17ad72|here]].
+More tools [[Ethical Hacking MOC#^17ad72|here]].
 More on [[ETH Metasploit|Metasploit]].
