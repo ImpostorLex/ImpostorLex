@@ -7,7 +7,7 @@
 
 Is so important that there are thousand of books written about it.
 
-It differs from packet to packet size or amount.
+It differs from packet to packet's size or amount.
 
 ```ad-example
 If 10 packet arrives at an empty queue at the same time, the first packet will suffer no delay while the last suffer will suffer great delay from first 9 packets.
@@ -28,7 +28,24 @@ The queue is overloaded and it won't stop.
 $$ La/R\le 1 $$
 If packet arrives from time time then packets will not experience queuing delay.
 
+In the real world, there is no pattern for arrivals of packet, they arrive in random amount of time.
 
 ---
 
-Some Info about Queuing Delay [[NET Network Core#^d0a276|here]].
+## Packet Loss
+
+Routers queuing capacity depends on the cost and design.
+
+Packet delay dont approach infinity since links have limited capacity.
+
+If queuing is full, all arriving packets will be dropped or lost.
+
+Lost packets can or may be re-transmitted on an end to end basis.
+
+
+
+---
+
+Some Info about Queuing Delay [[NET Network Core#^d0a276|here]] and Store-and-Forward [[NET Network Core#^b46806|here]].
+
+Continues here at [[NET End-To-End Delay|End-To-End Delay]].

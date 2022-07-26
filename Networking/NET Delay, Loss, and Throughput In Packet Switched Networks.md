@@ -6,6 +6,8 @@ The Internet can be viewed as an infrastructure that provides services to #Distr
 
 Computer network limits the [[NET Terms#^4e7949|throughput]] between end systems.
 
+---
+
 ## 1.4.1 Delay in Packet-Switched Networks
 Packet starts from the source and it passes through a series of routers and the journey end when it reaches the destination.
 
@@ -72,11 +74,13 @@ So it wall take 0.12ms to transmit or push the packets to Router B
 
 ### Propagation Delay
 
+^ed4547
+
 Is the time required to continue from the beginning of the link to router B.
 
 Distance between the two routers.
 
-Propagation depends on the [[NET Computer Networks and the Internet#^b5779b|Physical Medium]] of the link and have a range of
+Propagation depends on the [[NET Computer Networks and the Internet#Communication Links|Physical Medium]] of the link and have a range of
 
 Length of the link.
 
@@ -108,7 +112,7 @@ A highway(The **link**) that have a toolbooths(The **Routers**) for every 100 ki
 
 ![[Pasted image 20220720104100.png]]
 
-Say that if one car of the caravan arrives first at the toolbooth, it waits for the entire 9 cars lined up behind it in other words entire caravan must be stored at the toolbooth first before it can get forwarded([[NET Network Core#^b46806|Store and Forward]]).
+Say that if one car of the caravan arrives first at the toolbooth, it waits for the entire 9 cars lined up behind it in other words entire caravan must be stored at the toolbooth first before it can get forwarded([[NET Network Core#Store-and-Forward Transmission|Store and Forward]]).
 
 So for a toolbooth to push the entire caravan into the **highway** would take 
 for a toolbooth to process 5 cars (12 seconds each) = 1 minute, for a toolbooth to process 10 cars would take 2 mins that is the **transmission delay**.
@@ -142,7 +146,11 @@ For example *Dproc* can be just microseconds if two routers are only in the same
 
 Next is *Dtrans* can be small amount to noticeable, if the transmission rate is 10 Mbps it is not noticeable, however if a packet is sent over the Internet witth slow modem links it can be noticeable.
 
+```ad-note
+Nodal delay only talks about the delay at a single router.
 
+End-to-End delay talks about the total delay from source to destination [[NET End-To-End Delay|End-to-End Dela]].
+```
 
 ---
 References:

@@ -4,20 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "471e45abc2f475aa",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "NET Queuing Delay and Packet Loss.md",
-            "mode": "source",
-            "backlinks": true,
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "b7779b38b1afdad2",
+        "id": "aab93ec511b5ac1f",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -30,25 +17,12 @@
         }
       },
       {
-        "id": "284cab473b7b5cd8",
+        "id": "23499939597e5e16",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "NET Network Core.md",
-            "mode": "source",
-            "backlinks": true,
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "dea51437b40727e5",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "NET Terms.md",
+            "file": "NET End-To-End Delay.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -80,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#throughput",
+                "query": "Transmission Vs Propagation",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,11 +63,13 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "af66c7792bf1fbb9",
@@ -109,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NET Queuing Delay and Packet Loss.md",
+                "file": "NET End-To-End Delay.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,16 +122,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "0134a02f864a4df4",
+  "active": "23499939597e5e16",
   "lastOpenFiles": [
     "NET Network Core.md",
+    "NET End-To-End Delay.md",
     "NET Queuing Delay and Packet Loss.md",
-    "NET Terms.md",
     "Networing MOC.md",
     "NET Delay, Loss, and Throughput In Packet Switched Networks.md",
     "NET Computer Networks and the Internet.md",
-    "NET Flashcards.md",
-    "DSL.md",
-    "001 Computer Networks and the Internet^Fiber To Home.md"
+    "NET Network Edge.md",
+    "NET Terms.md",
+    "NET Network Core^.md",
+    "NET Diagram.md"
   ]
 }

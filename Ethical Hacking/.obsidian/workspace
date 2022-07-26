@@ -15,6 +15,19 @@
             "source": false
           }
         }
+      },
+      {
+        "id": "e9989e3a6bccfcb0",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "ETH Linux PrivEsc.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -71,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OvertheWire/Bandit 1-20.md",
+                "file": "ETH Linux PrivEsc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,7 +101,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OvertheWire/Bandit 1-20.md",
+                "file": "ETH Linux PrivEsc.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -112,17 +125,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "bd1f74143afa9e47",
+  "active": "8a31bda7662e9446",
   "lastOpenFiles": [
-    "Bandit 21-34.md",
-    "OvertheWire/Bandit 1-20.md",
-    "Bandit  MOC.md",
-    "ETH Nmap.md",
-    "Linux Fundamentals.md",
-    "ETH Linux PrivEsc.md",
+    "TryHackMe/ETH 001 Nmap Practical.md",
     "Ethical Hacking MOC.md",
-    "TryHackMe/ETH 001 PracticalHydra.md",
+    "Linux Fundamentals.md",
+    "ETH Terms.md",
+    "ETH Nmap.md",
+    "ETH Linux PrivEsc.md",
     "ETH Hydra.md",
-    "TryHackMe/ETH 001  Practical Hydra 1.md"
+    "Bandit  MOC.md",
+    "OvertheWire/Bandit 1-20.md",
+    "ETH Metasploit.md"
   ]
 }

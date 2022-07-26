@@ -1,8 +1,5 @@
-#network_core 
 
-Is a framework that connects different networks that make up our computer system together
-
-#network_interface_card
+#network_interface_card 
 
 a hardware that lets a computer connect to a network
 
@@ -42,6 +39,8 @@ Is a short range wireless technology usually need to be 4cm or less to iniate a 
 #Propagation_delay 
 
 Amount of time required for a signal to be received after it has been sent. It occurs on the links time required fora bit to ravel from one router to the next.
+
+More about propagation delay [[NET Delay, Loss, and Throughput In Packet Switched Networks#^ed4547|here]].
 
 #hertz 
 

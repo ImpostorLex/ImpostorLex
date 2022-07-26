@@ -1,54 +1,66 @@
-```toc
-```
 
 [[Networing MOC]]
+
+---
+
 # Network Core
+
+Is a support or frame that interconnects different networks that offer many types of services.
+
+These are the routers and switches.
+
+---
 
 ## Packet Switching
 
 ^17c2e0
 
-^7272e3
-- End systems exchange **messages** with each other and these messages can be whatever the application designer wants, it can also perform control actions.
+End systems exchange **messages** with each other and these messages can be whatever the application designer wants, it can also perform control actions.
 
-- These messages from the source are broken down to chunks also known as packets.
+These messages from the source are broken down to chunks also known as packets.
 
-- Packets travels through #Communication_links  and #Packet_switches.
+Packets travels through [[NET Computer Networks and the Internet#Communication Links|Communication Link]] and [[NET Computer Networks and the Internet#Packet Switches|Packet Switches]].
 
-- *L* represents Packet length and *R* represents link bandwidth assuming #Propagation_delay  is zero, L = 7.5Mbits and R = 1.5Mbps = it will take 5 Seconds to reach the destination.
+*L* represents Packet length and *R* represents link bandwidth assuming #Propagation_delay  is zero, L = 7.5Mbits and R = 1.5Mbps = it will take 5 Seconds to reach the destination.
+
+Related [[NET Computer Networks and the Internet#^4b036a|Packet Switches]].
 
 ---
 ### Store-and-Forward Transmission
 
-^b46806
+(Most packet switches) Entire packet must arrived first before transmission of first bit packet.
 
-- (Most packet switches) Entire packet must arrived first before transmission of first bit packet.
+ ![[Pasted image 20220709093318.png|center]]
+ 
+Packet 1 arrives at the Router but Router will not transmit, it is waiting for the rest of the packet, Packet 1's bits are stored or buffered.
 
-- ![[Pasted image 20220709093318.png]]
-- Packet 1 arrives at the Router but Router will not transmit, it is waiting for the rest of the packet, Packet 1's bits are stored or buffered.
-
-- With #Propagation_delay it depends the speed of the medium and how long the link is
+With #Propagation_delay it depends the speed of the medium and how long the link is
 
 - 1 Kilobyte = 1000 Byte
 - 1000 Byte = 1 Kilobyte
 - 1 Kilobyte = 8000 bit
 - 10 Mbps = 10,000,000 bit
 
-- Bits are the smallest unit of data the '1s' and '0s' and Byte is a basic unit of measurement for storage space, 1 Letter equals 1 Byte.
+Bits are the smallest unit of data the '1s' and '0s' and Byte is a basic unit of measurement for storage space, 1 Letter equals 1 Byte.
 
-- With a 10Mbps transmission link. 8000 bit / 10,000,000 = .8 miliseconds (Source to Router) + Router to Destination (Assuming R rate is the same for Router to Dest.)  .8 + .8 (Propagation delay = to spread) = .16 miliseconds.
+With a 10Mbps transmission link. 8000 bit / 10,000,000 = .8 miliseconds (Source to Router) + Router to Destination (Assuming R rate is the same for Router to Dest.)  .8 + .8 (Propagation delay = to spread) = .16 miliseconds.
 
-- If cut-through method is used it would only take .8 milseconds to S. > R > Dest. since it will not wait for the other packets to arrive.
+If cut-through method is used it would only take .8 milseconds to S. > R > Dest. since it will not wait for the other packets to arrive.
+
+Assuming that the packet will travel through a series of links with the same transmission rate. (Where **N** is the number of Routers that the packet will pass through and also assume that there is no processing and propagation delay.)
+$$ Dend-to-end = N L/R $$ 
+Equation 1.1
 
 ---
 
 ^d0a276
 ### Queuing Delays and Packet Loss 
-- Packet switch has an #output_buffer for every attached link, it stores packets that the router is about to send to that link.
 
-- The output buffer is place where packets waits if the link is busy with transmission of another packet to the same link.
+Packet switch has an #output_buffer for every attached link, it stores packets that the router is about to send to that link.
 
-- Arriving or queueing packets are loss if buffer space is full
+The output buffer is place where packets waits if the link is busy with transmission of another packet to the same link.
+
+Arriving or queueing packets are loss if buffer space is full
 
 ```ad-example
 title: Packet Queue
@@ -56,30 +68,35 @@ Host A and B send packets through a 100 Mbps Ethernet link to the router and the
 
 ![[Pasted image 20220711170555.png]]
 ```
----
-### Forwarding Tables and Routing Protocols
-- Packet forwarding (transmission) is done in different ways in different types of computer networks.
 
-	- In the Internet, every end system has an IP address, the sender includes the destination's IP address into the packet's #header.
+
+---
+
+### Forwarding Tables and Routing Protocols
+Packet forwarding (transmission) is done in different ways in different types of computer networks.
+
+In the Internet, every end system has an IP address, the sender includes the destination's IP address into the packet's #header.
 	
-	- IP address has a hierarchical structure meaning that the router examines a portion of packet's destination address then forwards to the packet to the next router or what they call **Forwarding table**that maps destination address.
+IP address has a hierarchical structure meaning that the router examines a portion of packet's destination address then forwards to the packet to the next router or what they call **Forwarding table**that maps destination address.
 	
-	- When a packet arrives the router examines the address and uses the forwarding table to find the right #outbound_link (Outbound = traveling away / in this case it is more like finding the right path to dest.) then router redirects the packet to this outbound link.
+When a packet arrives the router examines the address and uses the forwarding table to find the right #outbound_link (Outbound = traveling away / in this case it is more like finding the right path to dest.) then router redirects the packet to this outbound link.
 	
-	- Internet has a very special #Routing_Protocols that are used to automatically set the forwarding tables to determine the shortest path to configure forwarding tables in the router.
+Internet has a very special #Routing_Protocols that are used to automatically set the forwarding tables to determine the shortest path to configure forwarding tables in the router.
 	
 ```ad-example
 title: Forwarding Table
 Joe is a driver trying to get to 123 Cancer St in Meyc, sto nino, but he doesn't like to use the map he prefers destination, he asked how to get to the that location to a person, the person extract a portion of the address sto nino, tells joe to go to a specific location in sto nino, joe arrives then asked a person again then person extracts Cancer St then he finall arrived at 123 Cancer St.
 ```
+
 ---
 
+
 ## Circuit Switching
-- One of the ways to move data across a network.
+One of the ways to move data across a network.
 
-- Resources (buffers, link transmission rate) are reserved for the duration of the communication sessions.
+Resources (buffers, link transmission rate) are reserved for the duration of the communication sessions.
 
-- In packet-switching resources are not reserved therefore there is a big possibility for queue. 
+ In packet-switching resources are not reserved therefore there is a big possibility for queue. 
 
 ```ad-example
 title: Circuit (R-A) vs Packet Switching (R-B)
@@ -162,7 +179,8 @@ There are 10 users and one of them generates 1,000-bit packet while the other 9 
 ---
 
 ## A Networks of Networks
-End systems connect into the Internet via an access [[NET Computer Networks and the Internet#^f4e7d1|ISP]].
+
+End systems connect into the Internet via an access [[NET Computer Networks and the Internet#Internet Service Providers|Internet Service Provider]].
 
 They provide connectivity via #DSL, #cable_modems, FTTH, Wi-fi, and cellular.
 
