@@ -74,4 +74,23 @@ Is a tool to see or measure the end-to-end delay in a computer network.
 
 User need to specify the destination hostname, in the source, the program sends a special packets to the destination as they passes a series of routers, the special packets that passes a series of router sends back a message containing the name and address of the router.
 
-It is similar to finding a treasure, a person who wants to hide the treasure goes to a place(routers), leaving clues (messages, name and address) for the hunter(special packet) until the hunter reaches the X spot or (the final destination)
+```ad-example
+title: Traceroute.
+Suppose there are four routers form source to destination.
+Source will send 3 special packets to first hop router, then router sends back reply in miliseconds per packet including name and address of the router back to traceroute(source), then traceroute again sends 3 packets to the next hop router and does the same to the third router, each of these packets are marked *n*.
+
+First packet sent is number 1 and so on.
+![[Pasted image 20220728111953.png]]
+
+Example of message returned to source:
+**1. gw-vlan-2451.cs.umass.edu (128.119.245.1) 1.899 ms 3.266 ms 3.280 ms**
+
+**1** =- No. of router
+**gw-vlan-2451...** =- name of the router
+**(xxx.xxx.xxx.xxx)** =- address of the router.
+***** :- In place of **ms** columns if special packet is dropped.
+
+**Note:- These delays include all types of delay discussed.**
+
+Wherein the last three columns are the Round-Trip Delay, packets send and returned back to source message in elapse time.
+```

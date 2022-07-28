@@ -368,4 +368,4 @@ As specified in the **question**, the **suconnect** file will connect to a local
 ---
 
 Bandit Map of Content [[Bandit  MOC|here]].
-Bandit Level 20-34 [[Bandit 21-34|here]].
+Bandit Level 21-34 [[Bandit 21-34|here]].
