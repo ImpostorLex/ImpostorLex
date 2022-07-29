@@ -12,4 +12,12 @@ img[alt*="center"] {
     margin-right: auto;
 }
 
+.markdown-rendered .internal-link {
+text-decoration:none;
+}
+
+.markdown-source-view.mod-cm6 .cm-underline
+{
+text-decoration:none;
+}
 

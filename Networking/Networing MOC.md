@@ -10,11 +10,12 @@ A map of content of my networking notes
 	- [[NET Delay, Loss, and Throughput In Packet Switched Networks]] 1.4 - 1.4.1
 	- [[NET Queuing Delay and Packet Loss]] 1.4.2
 	- [[NET End-To-End Delay]] 1.4.3
-	- 
+	- [[NET Throughput in Computer Networks]] 1.4.4
 
 
 
 ---
+## Related:
 Network [[NET Terms]]
 Network [[NET Flashcards]]
 Network [[NET Diagram|Diagrams]].

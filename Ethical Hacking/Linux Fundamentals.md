@@ -1,4 +1,5 @@
 # Linux
+
 - Is a term for multiple OS's that are based on UNIX (also an OS), Linux is a open source since UNIX is open source too.
 
 - Many Linux comes in all shapes and sizes.
@@ -9,6 +10,7 @@
 
 ---
 ## Basic Commands
+
 - `echo` used to output any text.
 
 - `whoami` show who is currently logged-in.
@@ -29,6 +31,7 @@
 
 ---
 ## Remote Access
+
 - `SSH` or Secure Shell is a protocol that sends any input into a encrypted text (unreadable) and decrypts it after reaching destination
 
 - Connects and interacts with the command line of another remote machine var(--text-highlight-bg) var(--text-normal)
@@ -56,7 +59,9 @@ Another example using an URL instead of an IP address but needs a port number sp
 	- **/tmp** stores data that are used once or twice once the computer is restarted files are wiped out.
 		- As a pentester this is a great place to store  things like enumaration scripts.
 ---
+
 ## Process 101
+
 - Process are programs that runs on our machine, it is managed by the kernel, and each process have PIDs, and PIDs are incremented in order. 
 
 - We can show what processes are running using the command `ps` and we can show all processes running including the system process using `ps aux`.

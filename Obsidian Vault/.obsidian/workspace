@@ -1,0 +1,144 @@
+{
+  "main": {
+    "id": "e02fec232ca4c4e6",
+    "type": "split",
+    "children": [
+      {
+        "id": "b0bfb4418831799e",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Why call higher-order notes MOCs.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6620c7f5908297cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "3d29c0ee7cb689a9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "159c4f11d9e3b4ee",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "ae1440e5d7a13b30",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0074400847d3d0e8",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "968da3cb493df701",
+    "type": "split",
+    "children": [
+      {
+        "id": "d01f2a6b0d079095",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8a48012b9bfc96d6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Why call higher-order notes MOCs.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4a5a1bec2f0a14b6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Why call higher-order notes MOCs.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8b3f920f0c54f308",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "781d50c51f5d65b2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Why call higher-order notes MOCs.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "159c4f11d9e3b4ee",
+  "lastOpenFiles": [
+    "LYT Kit 6/Spaces/Life/Areas/Financial/Auto Maintenance Log.md",
+    "LYT Kit 6/Spaces/Life/â¢ MOCs/Life Spaceâ¢ (Kit).md",
+    "LYT Kit 6/Calendar/2022-05-03.md",
+    "LYT Kit 6/Calendar/2022-05-02.md",
+    "LYT Kit 6/Calendar/+ Index for Calendar (Kit).md",
+    "LYT Kit 6/Calendar/2022/2022-04-30.md",
+    "LYT Kit 6/Atlas/Scopes/+ Index for index notes.md",
+    "LYT Kit 6/Atlas/MOCs/Library/Collective Intelligence MOC.md",
+    "LYT Kit 6/Atlas/Logs/Essays ð.md",
+    "LYT Kit 6/Atlas/MOCs/Finance MOC.md"
+  ]
+}

