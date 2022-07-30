@@ -119,5 +119,5 @@ It is present in Voice over-IP or VoIP, these are skype, and whatsapp, the sende
 
 ---
 
-[[Networing MOC| Map of Content]].
 Down: [[NET Throughput in Computer Networks]]
+[[Networing MOC| Map of Content]].

