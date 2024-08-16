@@ -1,8 +1,6 @@
 # Hello, I'm Alex
 <a href="www.linkedin.com/in/alex-macenas-590514254"><img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 
-[Brief Introduction - Remove this afterwards]
-
 I am a recent graduate with a profound interest in continuously learning something new in technology and helping others in my own way.
 
 ## Objective
