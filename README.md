@@ -8,7 +8,6 @@ I am a recent graduate with a profound interest in continuously learning somethi
 My journey in information technology has led me to cybersecurity as I have always wanted to help others in my own way, and I am now eager to transition into this field to learn and contribute my skills.
 
 ## Skills
-[Provide skills and associated project. Make sure to hyperlink the project - Remove this afterwards]]
 
 | Skill                                         | Associated Project         |
 |-----------------------------------------------|----------------------------|
