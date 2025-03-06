@@ -19,9 +19,8 @@ My journey in information technology has led me to cybersecurity as I have alway
 | SIEM Implementation and Log Analysis          | <a href="https://blue-team-nine.vercel.app/mitreattck-analysis/threat-analysis-with-att-and-ck/">Detection Lab</a>|
 | Network Traffic Monitoring and Attack Detection | <a href="https://blue-team-nine.vercel.app/wireshark-analysis/network-analysis/">Network Analysis Lab</a>|
 | Malware Analysis with FlareVm with YARA rule       | <a href="https://github.com/ImpostorLex/Malware-Analysis/tree/main">Malware Analysis</a>|
-| Phishing Analysis     | Pentesting Active Directory |
-| Case Management with TheHive                  | SOC Automation Lab|
-| Scripting and Automation for Threat Mitigation | SOC Automation Lab|
+| Phishing Analysis     | <a href="https://blue-team-nine.vercel.app/phishing/phishing-analysis/">Here</a> |
+| Endpoint Security               |<a href="https://blue-team-nine.vercel.app/endpoint-security/endpoint-security/">Here</a>|
 
 ## Tools
 
