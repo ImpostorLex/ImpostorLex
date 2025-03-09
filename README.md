@@ -1,8 +1,9 @@
 # Hello, I'm Alex
 <a href="www.linkedin.com/in/alex-macenas-590514254"><img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 <a href="https://blue-team-nine.vercel.app/" target="_blank" style="text-decoration: none;">
-    <img src="https://img.shields.io/badge/-My_Notes-2E86C1?&style=for-the-badge&logoColor=white" />
+    <img src="https://img.shields.io/badge/-My_Works-2E86C1?&style=for-the-badge&logoColor=white" />
 </a>
+
 
 
 
