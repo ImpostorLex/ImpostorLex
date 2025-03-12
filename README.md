@@ -55,7 +55,6 @@ My journey in information technology has led me to cybersecurity as I have alway
 
 ## Projects
 - Splunk
-- OPNsense
 - Malware Analysis Lab
 - Active Directory
 - Python
