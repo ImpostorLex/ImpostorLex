@@ -50,13 +50,15 @@ My journey in information technology has led me to cybersecurity as I have alway
 ## Certifications
 <div> 
     <img src="https://img.shields.io/badge/-Practical%20SOC%20Analyst%20Associate%20(PSAA)-2E86C1?&style=for-the-badge&logoColor=white" /> 
+    <img src="https://img.shields.io/badge/-Security%20Analyst%20Level%201%20(SAL1)-2E86C1?&style=for-the-badge&logoColor=white" />
     <img src="https://img.shields.io/badge/-Google%20Cybersecurity%20Professional%20Certificate-4285F4?&style=for-the-badge&logo=google&logoColor=white" /> 
 </div> 
 
 ## Projects
-- Splunk
+- Splunk (SIEM)
 - Malware Analysis Lab
-- Active Directory
+- Endpoint Security Monitoring
+- LimaCharlie (Endpoint Detection Response)
 - Python
 - Phishing Email Analysis
 - Network Security Monitoring
